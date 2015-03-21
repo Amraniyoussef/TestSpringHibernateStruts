@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 mars 2015 14:40:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="model.Adresse" table="ADRESSE">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="num" type="int">
+            <column name="NUM" />
+        </property>
+        <property name="rue" type="java.lang.String">
+            <column name="RUE" />
+        </property>
+        <property name="codepostale" type="java.lang.String">
+            <column name="CODEPOSTALE" />
+        </property>
+        <property name="ville" type="java.lang.String">
+            <column name="VILLE" />
+        </property>
+        <property name="pays" type="java.lang.String">
+            <column name="PAYS" />
+        </property>
+    </class>
+</hibernate-mapping>
